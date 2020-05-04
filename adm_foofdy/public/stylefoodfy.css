@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    font-family: "Roboto";
+
+}
+
+header.admin nav a .logo{
+    width: 90.6px;
+    height: 26.9px;
+    margin-left: 231px;
+    padding-top: 27px;
+    padding-bottom: 26.1px;
+    align-self: flex-end;
+}
+
+header nav a .logo{
+    width: 90.6px;
+    height: 26.9px;
+    margin-left: 231px;
+    padding-top: 36.1px;
+    padding-bottom: 30px;
+    align-self: flex-end;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 36px;
+    width: 100%;
+}
+
+header.admin{
+    background-color: #000000;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+
+}
+
+
+header .links a{
+    margin-top: -16px;
+    color: black;
+    text-decoration: none;
+    /* padding-top:36px ; */
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+
+.links a:nth-child(2){
+    margin-left: 122.4px;
+}
+.links a:nth-child(3){
+    margin-left: 30px;
+}
+
+.links a.active{
+    font-weight: bold;
+}
+
+.links a:hover{
+    font-weight: bold;
+    transition: 200ms;
+}
+
+main{
+    margin-left: 230px;
+    margin-right: 230px;
+}
+
+.intro-block{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    height: 366px;
+    width: 940px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.intro-block img{
+    width: 216px;
+    height: 300px;
+    position: absolute;
+    margin-left: 624px;
+    margin-top: 66px;
+    margin-right: 10px;
+}
+
+h1{
+    font-size: 32px;
+    margin: 116px auto 10px 60px;
+    padding-bottom: 10px;
+}
+
+.intro-block p{
+    font-size: 18px;
+    margin-left: 60px;
+    opacity: 0.7;
+    color: #000000;
+    line-height: 28px;
+    margin-bottom: 117px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 316px;
+    height: 84px;
+}
+
+h2{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.receitas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.receita{
+    cursor: pointer;
+}
+
+.receita img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.nomeReceita{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 21px;
+}
+
+.criadorReceita{
+    font-size: 14px;
+    color: #777777;
+    line-height: 16px;
+    margin-bottom: 30px;
+    margin-top: 10px
+}
+
+footer .rectangle{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 62px;
+    background-color: #EEEEEE;
+    position: absolute;
+}
+
+footer p{
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    padding-top: 23px;
+    margin-bottom: 23px;
+}
+
+
+.paragrafo h2{
+    font-size: 24px;
+    margin-top: 14px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.aboutContent{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 940px;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: #444444;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.paragrafo h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+/* Recipe´s Page */
+
+.recipesPage img{
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.cooker-info{
+    text-align: center;
+}
+
+.cooker-info h1{
+    font-size: 36px;
+    height: 42px;
+    margin-bottom: 5px;
+}
+
+.cooker-info h2{
+    font-size: 20px;
+    color: #777777;
+    height: 24px;
+    margin-bottom: 50px;
+}
+
+.recipe h3{
+    font-size: 24px;
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+.recipe ul,
+.recipe p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    margin-bottom: 39px;
+}
+
+.recipes-info.hidden{
+    display: none;
+}
+
+/* Botão esconder-mostrar */
+.visibility{
+    color: #999999;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+
+/* Admin */
+
+.receitas_admin{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.receitas_admin img{
+    width: 172px;
+    height: 80px;
+    border-radius: 8.57px;
+    margin-bottom: 20px;
+}
+
+.receitas_admin .receita_admin{
+    display: grid;
+    grid-template-columns: 172px 1fr;
+    gap: 20px;
+}
+
+.receitas_admin .nomeReceita{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+
+.receitas_admin .criadorReceita{
+    font-size: 14px;
+    color: #777777;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.receitas_admin a{
+    color: #6558C3;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+/* Admin show */
+.recipeHead span:first-child{
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-flex;
+    margin-right: 322px ;
+}
+
+/* .recipeHead span:last-child{
+    box-sizing: border-box;
+    align-items: flex-end;
+} */
+
+.recipeHead a,
+.recipeHead button{
+    background-color: #6558C3;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 9px 20px;
+    text-align: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Admin create */
+.recipeHead{
+    margin-bottom: 30px;
+}
+
+.item div:first-child{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input{
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 940px;
+    height: 49px;
+}
+
+.item div:last-child{
+    margin-bottom: 30px;
+}
+
+button[type="button"]{
+    color: #6558C3;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#information input{
+    height: 257px;
+}
