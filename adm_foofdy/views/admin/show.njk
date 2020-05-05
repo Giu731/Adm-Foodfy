@@ -1,29 +1,18 @@
-{% extends "layout.njk" %}
+{% extends "admin/layout_admin.njk" %}
 
 {% block head %}
     <title>Receitas - Foodfy</title>
     <link rel="stylesheet" href="/stylefoodfy.css">
 {% endblock head %}
 
-{% block header %}
-<header class = "admin">
-    <nav class="links">
-        <a href="/" >
-            <div class="logo">
-                <img src="/logo_branco.png" 
-                alt="logofoodfy" > 
-            </div>
-        </a>
-    </nav>    
-</header>
-{% endblock header %}
 
 {% block content %}
 <main>
     <section class="recipesPage">
         <div class = "recipeHead">
             <span>Receita: {{recipe.title}}</span>
-            <span><a href = "#" >Editar receita</a></span>
+            <span></span>
+            <span><a href = "/admin/recipes/{{recipe.id}}/edit" >Editar receita</a></span>
         </div>
         <img src="{{recipe.image}}" alt = "imagem ilustrativa da receita: {{recipe.title}}">
         <div class="cooker-info">
